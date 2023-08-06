@@ -1,24 +1,25 @@
 {
   "name": "tiptap-bundle",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tiptap/core": "^2.0.4",
-    "@tiptap/extension-blockquote": "^2.0.4",
-    "@tiptap/extension-bullet-list": "^2.0.4",
-    "@tiptap/extension-hard-break": "^2.0.4",
-    "@tiptap/extension-heading": "^2.0.4",
-    "@tiptap/extension-list-item": "^2.0.4",
-    "@tiptap/extension-ordered-list": "^2.0.4",
-    "@tiptap/extension-paragraph": "^2.0.4",
+    "@blocknote/core": "^0.8.5",
+    "@blocknote/react": "^0.8.5",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "style-loader": "^3.3.3"
   }
 }
